@@ -1,0 +1,15 @@
+﻿2016-10-04 21:05:25.591 +07:00 [Error] 
+Npgsql.PostgresException: 28P01: password authentication failed for user "postgres"
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlConnector.HandleAuthentication(String username, NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout)
+   at Npgsql.ConnectorPool.Allocate(NpgsqlConnection conn, NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnection.OpenInternal()
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.LoginDA.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Semester VI (Internship)\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\LoginDA.cs:line 21
+   at Mainful.AdminUI.BusinessLayer.LoginBL.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Semester VI (Internship)\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\LoginBL.cs:line 20
+   at Mainful.AdminUI.Controllers.LoginController.Login(LoginEntity loginentity) in E:\My Documents\Binus\Semester VI (Internship)\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\LoginController.cs:line 21

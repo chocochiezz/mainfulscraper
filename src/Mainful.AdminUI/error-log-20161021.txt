@@ -1,0 +1,70 @@
+﻿2016-10-21 17:03:10.623 +07:00 [Error] 
+System.TimeoutException: The operation has timed out.
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout)
+   at Npgsql.ConnectorPool.Allocate(NpgsqlConnection conn, NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnection.OpenInternal()
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.LoginDA.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\LoginDA.cs:line 21
+   at Mainful.AdminUI.BusinessLayer.LoginBL.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\LoginBL.cs:line 20
+   at Mainful.AdminUI.Controllers.LoginController.Login(LoginEntity loginentity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\LoginController.cs:line 21
+2016-10-21 17:03:40.059 +07:00 [Error] 
+System.TimeoutException: The operation has timed out.
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout)
+   at Npgsql.ConnectorPool.Allocate(NpgsqlConnection conn, NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnection.OpenInternal()
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.LoginDA.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\LoginDA.cs:line 21
+   at Mainful.AdminUI.BusinessLayer.LoginBL.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\LoginBL.cs:line 20
+   at Mainful.AdminUI.Controllers.LoginController.Login(LoginEntity loginentity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\LoginController.cs:line 21
+2016-10-21 19:00:37.195 +07:00 [Error] 
+System.TimeoutException: The operation has timed out.
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout)
+   at Npgsql.ConnectorPool.Allocate(NpgsqlConnection conn, NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnection.OpenInternal()
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.LoginDA.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\LoginDA.cs:line 21
+   at Mainful.AdminUI.BusinessLayer.LoginBL.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\LoginBL.cs:line 20
+   at Mainful.AdminUI.Controllers.LoginController.Login(LoginEntity loginentity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\LoginController.cs:line 21
+2016-10-21 19:00:56.229 +07:00 [Error] 
+System.TimeoutException: The operation has timed out.
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout)
+   at Npgsql.ConnectorPool.Allocate(NpgsqlConnection conn, NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnection.OpenInternal()
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.LoginDA.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\LoginDA.cs:line 21
+   at Mainful.AdminUI.BusinessLayer.LoginBL.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\LoginBL.cs:line 20
+   at Mainful.AdminUI.Controllers.LoginController.Login(LoginEntity loginentity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\LoginController.cs:line 21
+2016-10-21 19:01:23.527 +07:00 [Error] 
+System.TimeoutException: The operation has timed out.
+   at Npgsql.NpgsqlConnector.Connect(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.RawOpen(NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnector.Open(NpgsqlTimeout timeout)
+   at Npgsql.ConnectorPool.Allocate(NpgsqlConnection conn, NpgsqlTimeout timeout)
+   at Npgsql.NpgsqlConnection.OpenInternal()
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.LoginDA.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\LoginDA.cs:line 21
+   at Mainful.AdminUI.BusinessLayer.LoginBL.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\LoginBL.cs:line 20
+   at Mainful.AdminUI.Controllers.LoginController.Login(LoginEntity loginentity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\LoginController.cs:line 21

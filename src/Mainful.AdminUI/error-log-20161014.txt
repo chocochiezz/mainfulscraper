@@ -1,0 +1,17 @@
+﻿2016-10-14 16:03:47.344 +07:00 [Error] 
+System.InvalidOperationException: Error parsing column 2 (Floor=P3 - String) ---> System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.String.System.IConvertible.ToInt32(IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at Deserializeb078cbf5-0fb5-4685-bf68-746b64f900fd(IDataReader )
+   --- End of inner exception stack trace ---
+   at Dapper.SqlMapper.ThrowDataException(Exception ex, Int32 index, IDataReader reader, Object value)
+   at Deserializeb078cbf5-0fb5-4685-bf68-746b64f900fd(IDataReader )
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.ParkingSpaceDA.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\ParkingSpaceDA.cs:line 34
+   at Mainful.AdminUI.BusinessLayer.ParkingSpaceBL.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\ParkingSpaceBL.cs:line 28
+   at Mainful.AdminUI.Controllers.ParkingSpaceController.Get(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\ParkingSpaceController.cs:line 20

@@ -1,0 +1,93 @@
+﻿2016-10-25 10:23:00.670 +07:00 [Error] 
+Npgsql.NpgsqlException: Exception while reading from stream ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Npgsql.ReadBuffer.Ensure(Int32 count, Boolean dontBreakOnTimeouts)
+   --- End of inner exception stack trace ---
+   at Npgsql.ReadBuffer.Ensure(Int32 count, Boolean dontBreakOnTimeouts)
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlConnector.ReadExpecting[T]()
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.PromoDA.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\PromoDA.cs:line 32
+   at Mainful.AdminUI.BusinessLayer.PromoBL.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\PromoBL.cs:line 29
+   at Mainful.AdminUI.Controllers.PromoController.Get(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\PromoController.cs:line 20
+2016-10-25 14:02:58.440 +07:00 [Error] 
+Npgsql.NpgsqlException: Exception while writing to stream ---> System.IO.IOException: Unable to write data to the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at Npgsql.WriteBuffer.Flush()
+   --- End of inner exception stack trace ---
+   at Npgsql.WriteBuffer.Flush()
+   at Npgsql.NpgsqlConnector.SendBuffer()
+   at Npgsql.NpgsqlCommand.Send(PopulateMethod populateMethod)
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.LoginDA.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\LoginDA.cs:line 21
+   at Mainful.AdminUI.BusinessLayer.LoginBL.Get(LoginEntity loginEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\LoginBL.cs:line 20
+   at Mainful.AdminUI.Controllers.LoginController.Login(LoginEntity loginentity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\LoginController.cs:line 21
+2016-10-25 14:58:36.305 +07:00 [Error] 
+Npgsql.NpgsqlException: Exception while reading from stream ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Npgsql.ReadBuffer.Ensure(Int32 count, Boolean dontBreakOnTimeouts)
+   --- End of inner exception stack trace ---
+   at Npgsql.ReadBuffer.Ensure(Int32 count, Boolean dontBreakOnTimeouts)
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlConnector.ReadExpecting[T]()
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.PromoCategoryDA.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\PromoCategoryDA.cs:line 32
+   at Mainful.AdminUI.BusinessLayer.PromoCategoryBL.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\PromoCategoryBL.cs:line 28
+   at Mainful.AdminUI.Controllers.PromoCategoryController.Get(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\PromoCategoryController.cs:line 20
+2016-10-25 15:58:32.793 +07:00 [Error] 
+Npgsql.NpgsqlException: Exception while reading from stream ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Npgsql.ReadBuffer.Ensure(Int32 count, Boolean dontBreakOnTimeouts)
+   --- End of inner exception stack trace ---
+   at Npgsql.ReadBuffer.Ensure(Int32 count, Boolean dontBreakOnTimeouts)
+   at Npgsql.NpgsqlConnector.DoReadMessage(DataRowLoadingMode dataRowLoadingMode, Boolean isPrependedMessage)
+   at Npgsql.NpgsqlConnector.ReadMessageWithPrepended(DataRowLoadingMode dataRowLoadingMode)
+   at Npgsql.NpgsqlConnector.ReadExpecting[T]()
+   at Npgsql.NpgsqlDataReader.NextResultInternal()
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.Execute(CommandBehavior behavior)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderInternal(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   at Dapper.SqlMapper.<QueryImpl>d__124`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   at Mainful.AdminUI.DataLayer.EventOrganizerDA.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.DataLayer\EventOrganizerDA.cs:line 32
+   at Mainful.AdminUI.BusinessLayer.EventOrganizerBL.GetAll(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI.BusinessLayer\EventOrganizerBL.cs:line 28
+   at Mainful.AdminUI.Controllers.EventOrganizerController.Get(DBParamEntity dbParamEntity) in E:\My Documents\Binus\Mainful Admin UI\Mainful.AdminUI\src\Mainful.AdminUI\Controllers\EventOrganizerController.cs:line 20

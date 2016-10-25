@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Mainful.AdminUI.DataLayer": "1.0.0-*",
+    "Mainful.AdminUI.Shared": "1.0.0-*",
+    "Microsoft.AspNetCore.Http": "1.0.0",
+    "NETStandard.Library": "1.6.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+﻿body {
+}
+.icon-page-excel{
+    background-image:url(icons/page_excel.png)
+
+}
+
+.icon-book {
+    background-image:url(icons/book.png);
+}
+
+.icon-help {
+    background-image:url(icons/help.png);
+}
+
+.icon-page-delete {
+	background-image:url(icons/page_delete.png);
+}
+.icon-page-edit {
+	background-image:url(icons/page_edit.png);
+}
+.icon-script-delete{
+    background-image:url(icons/script_delete.png)
+
+}
+
+.icon-cancel {
+	background-image:url(icons/cancel.png);
+}
+
+.icon-comment-add {
+	background-image:url(icons/comment_add.png);
+}
+
+.icon-page-add {
+	background-image:url(icons/page_add.png);
+}
+
+.icon-comment-edit {
+	background-image:url(icons/comment_edit.png);
+}
+
+.icon-comment-delete {
+	background-image:url(icons/comment_delete.png);
+}
+
+.icon-page-save {
+	background-image:url(icons/page_save.png);
+}
+.icon-save {
+    background-image:url(icons/save.png);
+}
+.icon-arrow-refresh-small {
+	background-image:url(icons/arrow_refresh_small.png);
+}
+.icon-arrow-down {
+background-image:url(icons/arrow_down2.png)
+}
+.icon-view {
+    background-image:url(icons/image.png);
+}
+
+.icon-report {
+    background-image:url(icons/report.png);
+}
+.icon-interfaces {
+    background-image:url(icons/interfaces.png);
+    border-radius:25%
+}
+.icon-printer {
+	background-image:url(icons/printer.png)
+}
+
+.icon-feed {
+	background-image:url(icons/feed.png);
+}
+
+.icon-application-add{
+	background-image:url(icons/application_add.png);
+}
+
+.icon-add{
+	background-image:url(icons/add.png);
+}
+
+.icon-del{
+	background-image:url(icons/del.png);
+}
+.icon-delete {
+    background-image:url(icons/delete.png);
+}
+.icon-user-edit{
+	background-image:url(icons/user_edit.png);
+}
+
+.icon-comment{
+	background-image:url(icons/comment.png);
+}
+
+.icon-contact{
+	background-image:url(icons/contacts.png);
+    border-radius:100%
+}
+
+.icon-pdf{
+	background-image:url(icons/icon-pdf.png);
+}
+
+.icon-export-pdf{
+	background-image:url(icons/export-pdf.png);
+}
+
+.icon-accept{
+	background-image:url(icons/accept.png);
+}
+
+.icon-star{
+	background-image:url(icons/star.png);
+}
+
+.icon-arrow-refresh{
+	background-image:url(icons/arrow_refresh.png);
+}
+.icon-refresh {
+    background-image:url(icons/refresh.png)
+}
+.icon-cross{
+	background-image:url(icons/cross.png);
+}
+
+.icon-disk{
+	background-image:url(icons/disk.png);
+}
+
+.icon-application-edit{
+	background-image:url(icons/application_edit.png);
+}
+
+.icon-application-go{
+	background-image:url(icons/application_go.png);
+}
+.icon-login {
+    background-image:url(icons/logins.png);
+    border-radius:100%
+}
+.icon-color-swatch{
+	background-image:url(icons/color_swatch.png);
+}
+
+.icon-email-go{
+	background-image:url(icons/email_go.png);
+}
+
+.icon-arrow-rotate-clockwise{
+	background-image:url(icons/arrow_rotate_clockwise.png);
+}
+
+.icon-arrow-switch{
+	background-image:url(icons/arrow_switch.png);
+}
